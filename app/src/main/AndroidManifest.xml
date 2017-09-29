@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jinglz.app">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.jinglz.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <permission
+        android:name="com.jinglz.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="bnpo.test-app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="bnpo.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.start.StartActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme" />
+        <activity
+            android:name=".ui.signup.SignUpActivity"
+            android:parentActivityName=".ui.start.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentStatusTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.forgotpassword.ForgotPasswordActivity"
+            android:label="@string/title_forgot_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.confirmcode.password.ConfirmCodePasswordActivity"
+            android:label="@string/title_confirm_code"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.resetpassword.ResetPasswordActivity"
+            android:label="@string/title_change_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.confirmcode.password.PasswordChangedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentStatusTheme" />
+        <activity
+            android:name=".ui.confirmcode.phone.ConfirmCodePhoneActivity"
+            android:label="@string/title_confirm_code"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ui.profile.edit.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.videorules.VideoRulesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentStatusTheme" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentStatusTheme"/>
+        <activity
+            android:name=".ui.legalnotice.LegalNoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.winnings.WinningsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.showvideo.ShowVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@style/ShowVideoTheme" />
+        <!--android:launchMode="singleInstance"-->
+        <activity
+            android:name=".ui.services.ServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.changepassword.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0c7675012470bd5f6ee23c7d90806bb92d1c4bd8" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="@string/branch_key" />
+        <meta-data
+            android:name="JW_LICENSE_KEY"
+            android:value="nqmvTGIkwfGFy6seVwAaNu/iOzGqhvSNb2Hfk1Xx8qyCbyBW" />
+
+        <service android:name=".data.notifications.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.branch.referral.InstallListener"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mixpanel.android.mpmetrics.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.jinglz.app" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity android:name=".checkMvp.HelloWorldActivity"/>
+    </application>
+
+</manifest>

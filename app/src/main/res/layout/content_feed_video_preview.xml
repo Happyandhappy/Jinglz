@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/item_feed_video_new">
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_preview_height"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:background="@color/dark_grey" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feed_video_vignette_height"
+        android:layout_gravity="bottom"
+        android:src="@drawable/vignette" />
+
+</FrameLayout>

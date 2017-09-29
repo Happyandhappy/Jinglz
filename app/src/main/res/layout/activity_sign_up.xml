@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small">
+
+        <Button
+            android:id="@+id/button_back"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            fontPath="@string/bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/small"
+            android:drawableStart="@drawable/ic_back_black"
+            android:text="@string/action_back"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <include
+            android:id="@+id/image_logo"
+            layout="@layout/head_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal" />
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/large"
+            android:paddingEnd="@dimen/large"
+            android:paddingStart="@dimen/large"
+            android:paddingTop="@dimen/small">
+
+            <ImageView
+                android:id="@+id/image_avatar"
+                android:layout_width="@dimen/avatarSize"
+                android:layout_height="@dimen/avatarSize"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/medium"
+                android:src="@drawable/avatar_placeholder" />
+
+            <TextView
+                android:id="@+id/text_edit_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/image_avatar"
+                android:layout_alignTop="@id/image_avatar"
+                android:layout_marginStart="@dimen/view_spacing_normal"
+                android:layout_toEndOf="@id/image_avatar"
+                android:gravity="center"
+                android:text="@string/action_edit_avatar"
+                android:textColor="@color/deepBlue"
+                android:textSize="@dimen/textLarge" />
+
+            <View
+                android:id="@+id/top_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textHint" />
+
+
+            <Space
+                android:id="@+id/name_spacer"
+                android:layout_width="@dimen/view_spacing_normal"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_avatar"
+                android:layout_centerHorizontal="true" />
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/first_name_layout"
+                style="@style/InputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/image_avatar"
+                android:layout_marginBottom="@dimen/medium"
+                android:layout_toStartOf="@id/name_spacer">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_first_name"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_male"
+                    android:hint="@string/text_first_name"
+                    android:inputType="textCapWords" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/last_name_layout"
+                style="@style/InputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/image_avatar"
+                android:layout_marginBottom="@dimen/medium"
+                android:layout_toEndOf="@id/name_spacer">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_last_name"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_last_name"
+                    android:inputType="textCapWords" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/email_layout"
+                style="@style/InputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_name_layout"
+                android:layout_marginBottom="@dimen/medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_email"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_email"
+                    android:hint="@string/text_email"
+                    android:inputType="textEmailAddress" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/password_layout"
+                style="@style/InputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_layout"
+                android:layout_marginBottom="@dimen/medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_password"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_key"
+                    android:hint="@string/text_password"
+                    android:inputType="textVisiblePassword" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/confirm_password_layout"
+                style="@style/InputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_layout"
+                android:layout_marginBottom="@dimen/medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_confirm_password"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_key"
+                    android:hint="@string/text_confirm_password"
+                    android:inputType="textVisiblePassword" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/phone_number_layout"
+                style="@style/InputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirm_password_layout"
+                android:layout_marginBottom="@dimen/medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_phone_number"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890+"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:hint="@string/text_phone_number"
+                    android:inputType="phone" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/zip_code_layout"
+                style="@style/InputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_number_layout"
+                android:layout_marginBottom="@dimen/medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_zip_code"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_pin"
+                    android:hint="@string/text_zip_code"
+                    android:inputType="number"
+                    android:maxLength="@integer/zip_length" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/year_of_birth_layout"
+                style="@style/InputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zip_code_layout"
+                android:layout_marginBottom="@dimen/medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_year_of_birth"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_cake"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_birth_year"
+                    android:inputType="number" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/gender_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/year_of_birth_layout"
+                android:layout_marginBottom="@dimen/medium"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/toggle_male"
+                    style="@style/GenderToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/view_spacing_normal"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_edittext"
+                    android:drawableStart="@drawable/selector_male"
+                    android:textOff="@string/text_male"
+                    android:textOn="@string/text_male" />
+
+
+                <ToggleButton
+                    android:id="@+id/toggle_female"
+                    style="@style/GenderToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_spacing_normal"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_edittext"
+                    android:drawableStart="@drawable/selector_female"
+                    android:textOff="@string/text_female"
+                    android:textOn="@string/text_female" />
+            </RadioGroup>
+
+            <com.jinglz.app.ui.base.widget.CustomTextInputLayout
+                android:id="@+id/referrer_code_layout"
+                style="@style/InputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender_radio_group"
+                android:layout_marginBottom="@dimen/medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_referrer_code"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_referrals"
+                    android:hint="@string/text_referrer_code" />
+            </com.jinglz.app.ui.base.widget.CustomTextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/check_terms_and_conditions_box"
+                android:layout_below="@id/referrer_code_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_terms_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:theme="@style/TermsCheckBox"
+                    android:layout_marginEnd="@dimen/view_spacing_small"/>
+
+                <TextView
+                    android:id="@+id/text_terms_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:text="@string/text_terms_accept"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_register"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check_terms_and_conditions_box"
+                android:layout_centerHorizontal="true"
+                android:text="@string/action_register" />
+
+            <TextView
+                android:id="@+id/text_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_register"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/view_spacing_large"
+                android:layout_marginTop="@dimen/view_spacing_large"
+                android:text="@string/text_or_sign_up" />
+
+
+            <Space
+                android:id="@+id/social_spacer"
+                android:layout_width="@dimen/view_spacing_normal"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sign_up"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/button_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sign_up"
+                android:layout_toStartOf="@id/social_spacer"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_fb" />
+
+            <ImageButton
+                android:id="@+id/button_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sign_up"
+                android:layout_toEndOf="@id/social_spacer"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_google" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_camera"
+        android:icon="@drawable/ic_photo_camera"
+        android:title="@string/action_take_photo"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_library"
+        android:icon="@drawable/ic_photo_library"
+        android:title="@string/action_choose_photo"
+        app:showAsAction="ifRoom" />
+    <!--<item-->
+        <!--android:getId="@+getId/menu_remove_photo"-->
+        <!--android:icon="@drawable/ic_photo_delete"-->
+        <!--android:title="@string/action_delete_photo"-->
+        <!--app:showAsAction="ifRoom" />-->
+</menu>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    tools:ignore="MissingPrefix"
+    android:background="@color/accent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="@dimen/drawer_avatar_size"
+        android:layout_height="@dimen/drawer_avatar_size"
+        android:layout_margin="@dimen/view_spacing_normal"
+        android:src="@drawable/avatar_placeholder" />
+
+    <TextView
+        android:id="@+id/text_name"
+        fontPath="@string/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_avatar"
+        android:layout_marginEnd="@dimen/view_spacing_normal"
+        android:layout_marginTop="@dimen/small"
+        android:layout_toEndOf="@id/image_avatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textLarge"
+        tools:text="Zak Galifianakis" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_name"
+        android:layout_marginEnd="@dimen/view_spacing_normal"
+        android:layout_toEndOf="@id/image_avatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSmall"
+        tools:text="zakkary@gmail.com" />
+
+</RelativeLayout>

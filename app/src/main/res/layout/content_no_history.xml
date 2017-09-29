@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/layout_no_history"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="gone"
+    tools:showIn="@layout/fragment_game_history_tab"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/text_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/medium"
+        android:drawableTop="@drawable/ic_video"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/medium_grey"
+        tools:text="You didn't watch\nany videos today" />
+
+</FrameLayout>

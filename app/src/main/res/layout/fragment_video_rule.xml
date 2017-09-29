@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/onboarding_title_offset"
+    android:paddingEnd="@dimen/large"
+    android:paddingStart="@dimen/large"
+    android:paddingTop="@dimen/onboarding_title_offset"
+    tools:background="@color/video_rule_background"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="@dimen/video_rules_icon_size"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/large"
+        android:layout_weight="1"
+        tools:src="@drawable/ic_eye_contact" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/white"
+        tools:text="Eye contact" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large"
+        android:layout_marginEnd="@dimen/onboarding_description_offset"
+        android:layout_marginStart="@dimen/onboarding_description_offset"
+        android:layout_marginTop="@dimen/small"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/white"
+        tools:text="Please facing your phone and that your face is well lit." />
+
+    <Button
+        android:id="@+id/button_got_it"
+        style="@style/Button.PrimaryBorderedWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large"
+        android:text="@string/action_got_it"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+</LinearLayout>

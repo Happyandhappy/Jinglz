@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/video_rule_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/large"
+        android:weightSum="100"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="@dimen/video_rules_icon_size"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_success" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:gravity="center"
+            android:text="@string/text_success"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/onboarding_description_offset"
+            android:layout_marginStart="@dimen/onboarding_description_offset"
+            android:layout_marginTop="@dimen/small"
+            android:gravity="center"
+            android:maxWidth="@dimen/dialog_text_width"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/white"
+            tools:text="@string/text_contest_success_description" />
+
+        <Button
+            android:id="@+id/button_learn_more"
+            style="@style/Button.PrimaryBorderedWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal"
+            android:maxWidth="@dimen/dialog_text_width"
+            android:minWidth="@dimen/dialog_text_width"
+            android:text="@string/text_learn_more" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/normal"
+        android:layout_marginTop="@dimen/normal"
+        android:background="@null"
+        android:src="@drawable/ic_cross" />
+
+</FrameLayout>
+

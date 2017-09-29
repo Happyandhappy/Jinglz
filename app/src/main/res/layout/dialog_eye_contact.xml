@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/video_rule_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/large"
+    android:weightSum="100"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="@dimen/video_rules_icon_size"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:src="@drawable/ic_eye_contact" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium"
+        android:gravity="center"
+        android:text="@string/text_make_eye_contact"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/onboarding_description_offset"
+        android:layout_marginStart="@dimen/onboarding_description_offset"
+        android:layout_marginTop="@dimen/small"
+        android:gravity="center"
+        android:maxWidth="@dimen/dialog_text_width"
+        android:text="@string/try_watching_again_facing_the_screen_with_your_face_being_well_lit"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/white" />
+
+</LinearLayout>

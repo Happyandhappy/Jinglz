@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "171608587225",
+    "firebase_url": "https://jinglz-push.firebaseio.com",
+    "project_id": "jinglz-push",
+    "storage_bucket": "jinglz-push.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171608587225:android:4180777b59e3f273",
+        "android_client_info": {
+          "package_name": "com.jinglz.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171608587225-d2hf07b9s41cbbt5gd3c2fq9k24mcs6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jinglz.app",
+            "certificate_hash": "9C983B70EBD53AF512C697CCEF225EE889559AD2"
+          }
+        },
+        {
+          "client_id": "171608587225-oresr1npb45vgekg7g0hakf9t0no13e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtc-pScgajli11JxwWp3MtKKwESWA6ME0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171608587225-oresr1npb45vgekg7g0hakf9t0no13e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

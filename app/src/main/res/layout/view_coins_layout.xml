@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@+id/container_coins"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/light_grey"
+    android:gravity="center_vertical"
+    android:padding="@dimen/view_spacing_normal"
+    tools:parentTag="TableLayout">
+
+    <TableRow
+        android:id="@+id/table_row_time"
+        android:layout_marginBottom="@dimen/view_spacing_small"
+        android:weightSum="4">
+
+        <TextView
+            style="@style/EntriesWinningsTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/EntriesWinningsTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/EntriesWinningsTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/EntriesWinningsTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_row_coins"
+        android:layout_marginBottom="@dimen/view_spacing_normal"
+        android:weightSum="4">
+
+        <include
+            layout="@layout/include_dialog_coins"
+            android:layout_width="@dimen/dialog_coin_small"
+            android:layout_height="@dimen/dialog_coin_small"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/include_dialog_coins"
+            android:layout_width="@dimen/dialog_coin_small"
+            android:layout_height="@dimen/dialog_coin_small"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/include_dialog_coins"
+            android:layout_width="@dimen/dialog_coin_small"
+            android:layout_height="@dimen/dialog_coin_small"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/include_dialog_coins"
+            android:layout_width="@dimen/dialog_coin_small"
+            android:layout_height="@dimen/dialog_coin_small"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/text_tap_reveal_winnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text_tap_reveal_winnings"
+        android:textSize="@dimen/textSmall" />
+
+</merge>

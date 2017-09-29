@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix"
+    tools:layout_height="200dp">
+
+    <include layout="@layout/content_feed_video_preview" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/normal"
+        android:layout_marginStart="@dimen/normal"
+        android:paddingBottom="@dimen/normal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/white"
+        tools:text="Jamaica Burger" />
+
+    <TextView
+        android:id="@+id/text_sponsor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_name"
+        android:layout_marginEnd="@dimen/normal"
+        android:layout_marginStart="@dimen/normal"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/white"
+        tools:text="KFC" />
+
+    <TextView
+        android:id="@+id/text_badge_place"
+        style="@style/CircleBadgeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/very_small"
+        android:layout_marginTop="@dimen/normal"
+        android:layout_toStartOf="@+id/text_badge_coins"
+        android:background="@drawable/badge_place"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/text_badge_coins"
+        style="@style/CircleBadgeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/normal"
+        android:layout_marginTop="@dimen/normal"
+        android:background="@drawable/badge_coins"
+        tools:text="7" />
+
+</RelativeLayout>

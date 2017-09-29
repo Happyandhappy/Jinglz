@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/badge_jack_pot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_jack_pot"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="@dimen/very_small"
+    tools:ignore="MissingPrefix"
+    tools:showIn="@layout/item_feed_video_new">
+
+    <TextView
+        android:id="@+id/text_jack_pot_title"
+        fontPath="@string/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/badge_title_offset"
+        android:drawablePadding="@dimen/very_small"
+        android:drawableStart="@drawable/ic_coin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/badge_title_text_size"
+        tools:text="@string/text_jack_pot" />
+
+    <TextView
+        android:id="@+id/text_jack_pot"
+        fontPath="@string/bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/badge_title_offset"
+        android:gravity="end"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:text="1,500" />
+
+</LinearLayout>

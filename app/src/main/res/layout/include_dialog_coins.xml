@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dialog_coin_small"
+    android:layout_height="@dimen/dialog_coin_small"
+    android:layout_weight="1"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/image_coin"
+        android:layout_width="@dimen/dialog_coin_small"
+        android:layout_height="@dimen/dialog_coin_small"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/discover_coin_selector" />
+
+    <TextView
+        android:id="@+id/text_coin"
+        fontPath="@string/bold"
+        android:layout_width="@dimen/dialog_coin_small"
+        android:layout_height="@dimen/dialog_coin_small"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/small_coin"
+        android:gravity="center"
+        android:shadowColor="@color/dialog_coins_shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</FrameLayout>

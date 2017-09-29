@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size
+        android:width="@dimen/dialog_coin_small"
+        android:height="@dimen/dialog_coin_small" />
+    <stroke
+        android:width="@dimen/default_stroke_width"
+        android:color="@color/black_20"
+        android:dashGap="@dimen/view_spacing_small"
+        android:dashWidth="@dimen/view_spacing_small" />
+</shape>

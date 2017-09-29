@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1db79d</color>
+    <color name="primaryDark">#17927e</color>
+    <color name="accent">#1db79d</color>
+    <color name="textPrimary">#6f6e73</color>
+    <color name="textHint">#d8d8d8</color>
+    <color name="textSecondary">#ffa7a5af</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="white_75">#BFffffff</color>
+    <color name="black">@android:color/black</color>
+    <color name="light_grey">#f0eff4</color>
+    <color name="medium_grey">#6e6d72</color>
+    <color name="dark_grey">#434246</color>
+    <color name="dark_greyalpha">#ffa7a5af</color>
+
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="divider_color">#406e6d72</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="black_5">#0D000000</color>
+    <color name="drawer_tint">#89000000</color>
+
+    <color name="tutorial_background">#d9000000</color>
+
+    <color name="yellow">#f6d163</color>
+    <color name="green">#1db79d</color>
+    <color name="red">#e7536b</color>
+    <color name="error_red">#ff0000</color>
+    <color name="blue">#50b0e3</color>
+    <color name="deepBlue">#469aea</color>
+    <color name="deepBlueAlpha">#cc469aea</color>
+    <color name="facebookBlue">#2f4883</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="share_blue">#4fa4d8</color>
+    <color name="dialog_coins_background">#f2f1f5</color>
+    <color name="dialog_coins_text">#a0873a</color>
+    <color name="dialog_coins_shadow">#61000000</color>
+
+    <color name="video_rule_background">#111111</color>
+    <color name="dialog_color_title">#ff6e6d72</color>
+    <color name="accent_50">#801db79d</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/coins_history_header_height"
+    android:background="@color/dark_grey"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/normal"
+    android:paddingTop="@dimen/normal"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/text_title"
+        fontPath="@string/bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/yellow"
+        tools:text="October 900 coins" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingEnd="@dimen/small"
+        android:paddingStart="@dimen/small"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/container_weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+
+</LinearLayout>

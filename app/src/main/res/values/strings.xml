@@ -1,0 +1,289 @@
+<resources>
+    <string name="app_name">Jinglz</string>
+    <string name="under_construction">Under Construction</string>
+
+    <string name="us">US</string>
+    <string name="non_us">Non-US</string>
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_action_cancel">Cancel</string>
+    <string name="dialog_error_title">Sorry</string>
+    <string name="please_wait">Please wait…</string>
+
+    <string name="action_next">Next</string>
+    <string name="action_back">Back</string>
+
+    <string name="watch_head">Watch</string>
+    <string name="text_watch_title">Watch short video ads based on your likes and interests</string>
+    <string name="text_watch_description">Where you win $ for watching video ads. Have the TV Networks ever paid you to watch their commercials? Not in our lifetime.</string>
+
+    <string name="play_head">Play</string>
+    <string name="text_play_title">Get entered into a Jinglz drawing to win COIN</string>
+    <string name="text_play_description">After watching the short video ad, you will receive entry into an hourly drawing.</string>
+
+    <string name="win_head">Win</string>
+    <string name="text_win_title">Win BIG through hourly drawings &amp; redeem your COIN for cash</string>
+    <string name="text_win_description">The more you watch, the more drawings you’re entered in and the more you accumulate.</string>
+    <string name="text_welcome_to">"Welcome to "</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="action_forgot_password">Forgot your password?</string>
+    <string name="error_field_missing">Some fields are missing</string>
+    <string name="error_password_length">Password must be at least %d characters</string>
+    <string name="error_password_match">Passwords don’t match</string>
+    <string name="error_sign_in_incorrect">Incorrect username or password</string>
+
+    <string name="text_sign_in_method">or sign in using</string>
+    <string name="text_or">or</string>
+    <string name="text_sign_in">sign in</string>
+    <string name="text_using">using</string>
+
+    <string name="text_first_name">First Name</string>
+    <string name="text_last_name">Last Name</string>
+    <string name="text_email">Email</string>
+    <string name="text_phone_number">Phone Number</string>
+    <string name="text_password">Password</string>
+    <string name="text_confirm_password">Confirm Password</string>
+    <string name="text_zip_code">Zip Code</string>
+    <string name="text_birth_year">Year Of Birth</string>
+    <string name="text_referrer_code">Referrer\`s Code</string>
+    <string name="text_male">Male</string>
+    <string name="text_female">Female</string>
+    <string name="text_terms_accept">I accept the terms &amp; conditions</string>
+    <string name="text_terms_accept_highlight_part">terms &amp; conditions</string>
+    <string name="text_or_sign_up">or <b>sign up</b> using</string>
+    <string name="text_or_sign_up_black_part">sign up</string>
+    <string name="action_register">Register Me!</string>
+    <string name="action_register_facebook">Sign Up With Facebook</string>
+    <string name="error_required">Is required</string>
+    <string name="error_invalid_email">Invalid mail</string>
+    <string name="error_invalid_year_of_birth">Less than minimum allowed year 1900</string>
+    <string name="error_user_already_exist">User with such credential already exist.</string>
+    <string name="error_facebook_user_already_exist">User with such facebookId already exist</string>
+    <string name="error_account_for_this_device_already_exist">We’re sorry, looks like already exists an account for this device. Try login with your existing account</string>
+    <string name="error_terms_required">You must accept the terms &amp; conditions before continuing</string>
+
+    <string name="action_take_photo">Take photo</string>
+    <string name="action_choose_photo">Choose photo</string>
+    <string name="action_delete_photo">Delete photo</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_edit_avatar">Edit</string>
+
+    <string name="error_incorrect_location">Jinglz is only available for users on United States</string>
+    <string name="error_enable_location">We can\'t recognize your location</string>
+
+    <string name="text_tagline">Watch Ad • Enter Drawing • Un-losable</string>
+
+    <string name="title_forgot_password">Forgot your password</string>
+    <string name="text_not_again">Not Again?\nOk… We\'ll send an email to change your password</string>
+    <string name="text_confirm_code_password">We have emailed an activation code to %s\nEnter code to start playing</string>
+    <string name="text_confirm_code_phone">We have emailed an activation code to %s\nEnter code to verify your phone number. If your number is incorrect, please check it in your Profile.</string>
+    <string name="action_request_password">Request password</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="error_incorrect_confirm_code">Oops! We don’t recognize the code. Please check your email again or request another code</string>
+    <string name="error_incorrect_confirm_code_phone">Oops! We don’t recognize the code. Please check your sms again or request another code</string>
+    <string name="error_reset_password">Password not reseted</string>
+    <string name="text_new_password">New Password</string>
+    <string name="text_old_password">Old Password</string>
+    <string name="text_conform_new_password">Conform New Password</string>
+    <string name="action_change_password">Change Password</string>
+    <string name="title_change_password">Change your password</string>
+    <string name="action_continue">Continue</string>
+    <string name="title_confirm_code">Confirm code</string>
+    <string name="action_lets_jinglz">Let\'s Jinglz</string>
+    <string name="text_password_changed">Password changed</string>
+    <string name="text_password_changed_successfully">Your password has been changed successfully</string>
+
+    <string name="action_sign_up">"No Account? SIGN UP Now!"</string>
+    <string name="text_no_account">No Account?</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_now">Now!</string>
+
+    <string name="text_my_balance">My Balance</string>
+    <string name="text_coin">coin</string>
+    <string name="action_redeem_coin">Redeem coin</string>
+    <string name="text_today">Today</string>
+    <string name="text_week">Week</string>
+    <string name="text_month">Month</string>
+    <string name="text_this_week">This week</string>
+    <string name="text_this_month">This month</string>
+    <string name="text_learn_more">Learn More</string>
+    <string name="text_your_entries">Your Entries</string>
+    <string name="text_lets_jinglz">Let\'s Jinglz</string>
+    <string name="text_watched">Watched</string>
+    <string name="text_jack_pot">Jack\nPot</string>
+    <string name="text_time_left">Time\nLeft</string>
+    <string name="text_draw_time">Draw\nTime</string>
+    <string name="action_select">Select</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_send_code_again">Send code again</string>
+    <string name="error_locations_permission_rejected">You have to enable location</string>
+    <string name="error_server_error">Something went wrong, please try again later.</string>
+    <string name="action_send_code">Send code</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_redeem">Redeem</string>
+    <string name="menu_game_history">Game history</string>
+    <string name="menu_how_it_works">How it works</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_share">Share &amp; win</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="text_drawer_open">Open navigation</string>
+    <string name="text_drawer_close">Close navigation</string>
+    <string name="text_viewed">Viewed</string>
+    <string name="error_no_internet">Your currently do not have \n an internet connection.</string>
+    <string name="action_got_it">Got it!</string>
+
+    <string name="action_save_changes">Save Changes</string>
+
+    <string name="text_share_win">Share &amp; Win</string>
+    <string name="text_share_message">Win cash watching fun quick videos. Download Jinglz: %s</string>
+    <string name="text_share_via">Share via:</string>
+    <string name="text_share_and_win">Sharing Jinglz with friends will increase the hourly jackpots. The reward amounts grow with more players in each game.</string>
+    <string name="text_share_and_win_title">Share &amp; Win</string>
+    <string name="text_share_code">Share your code</string>
+    <string name="text_please_update_your_application">Please updated your application to the latest version</string>
+    <string name="text_we_have_noticed_you_have_trouble_logging_in">We have noticed you have trouble logging in. Maybe the issue is with your password. Would you like to reset your password?</string>
+    <string name="text_incorrect_email_or_password">Incorrect email or password</string>
+    <string name="text_update">Update</string>
+    <string name="text_reset_password">Reset password</string>
+    <string name="text_close">Close</string>
+
+    <string name="text_edit_profile">Edit your profile</string>
+    <string name="text_change_password">Change password</string>
+    <string name="text_services">Services</string>
+    <string name="text_logout">Log out</string>
+
+    <string name="text_how_it_works" formatted="false">%How it #Works#%\n\n
+Jinglz is THE destination where you watch short mobile video ads in their entirety &amp; are entered into hourly jackpot style drawings for cash prizes. You WILL win COIN (our version of points) in every hourly drawing but the COIN amount will vary from game to game based on your RANK (position) which is chosen randomly using an automated algorithm selecting 1st place to last place positions..
+\n\n%About #the Games#:%\n\n
+Games are held hourly on the hour. Players have until XX:59:59 to complete watching their video ads and be validated into the drawing.
+Video Ads must be watched in their entirety with the volume up to gain entry into the drawing.
+\n\n%About #the Drawings#:%\n\n
+The drawings will be random and select winners from 1st place all the way to last place. Every user will be given a RANK. The amount of COIN in the "jackpot" is determined by the number of participants in the hourly drawing. And the amount that is paid out is determined by your RANK.
+"Jackpot" sizes will vary from drawing to drawing as will your RANK and amount of COIN you will win.
+\n\n%About #the COIN#:%\n\n
+COIN is our measurement for points. The amount of coin you will accumulate will vary from game to game based on where you ranked in the drawing.
+Each COIN is equivalent to US$0.01, This amount is far greater than other sweepstakes and loyalty reward games in the marketplace today.
+\n\n%Redeeming #COIN#:%\n\n
+Redeeming COIN is easy as clicking a button and confirming an email confirmation.
+COIN redemption starts at 500 COIN or US$5.00
+Redeem as often as you like. There is no cost to you.
+    </string>
+
+    <string name="action_legal_notice">Legal Notices</string>
+    <string name="tutorial_balance" formatted="false">COIN BALANCE\n\n
+        This is the total amount of COIN\n
+        you have won!\n\n
+        %coin% 1 COIN = $0.01\n\n
+        Easily redeem your COIN for cash\n
+        with PayPal. See how it works in\n
+        the menu for details.</string>
+
+    <string name="text_coin_balance">COIN BALANCE</string>
+    <string name="text_coin_costs">1 COIN = $0.01</string>
+    <string name="tutorial_timer">This shows how much time you have\nleft to enter the drawing.\n
+        There\'s a contest every hour.</string>
+    <string name="tutorial_jack_pot">This shows the total amount of prize money for this contest. The amount grows with each person that enters the drawing.</string>
+    <string name="tutorial_drawing">To enter the drawing, you have to watch the entire video.</string>
+    <string name="tutorial_viewed">This means you have already watched this video.</string>
+    <string name="tutorial_re_watch">This allows you to watch the video again.</string>
+    <string name="tutorial_viewed_timer">This shows how much time is remaining before the results of the drawing are in.</string>
+    <string name="tutorial_position">This is your winning position in the contest.</string>
+    <string name="tutorial_coins">This is the amount of COIN you won in the contest.</string>
+    <string name="tutorial_learn_more">Click this button to learn more about the advertiser, offer or product.</string>
+    <string name="tutorial_drawing_time">This shows drawing time when contest happens. To see it you need to tap the time left icon.</string>
+    <string name="rules_of_jinglz">Rules of Jinglz</string>
+    <string name="menu_tutorials">Tutorials</string>
+    <string name="text_drawing_results">Drawing results</string>
+    <string name="action_watch_video_again">Watch the video again</string>
+    <string name="text_leadership_position">%dst</string>
+    <string name="text_leadership_coins">%d COIN</string>
+    <string name="text_you">You</string>
+
+    <string name="text_results_are">Result are in…</string>
+    <string name="text_your_entries_and_winnings">Your Entries &amp; Winnings!</string>
+    <string name="text_total_won">%d\n total won</string>
+    <string name="action_share" formatted="false">"%icon%  SHARE"</string>
+    <string name="text_tap_reveal_winnings" formatted="false">Tap to %coin% reveal winnings</string>
+    <string name="text_entries_and_winnings_share_message" formatted="false">I just won %d COIN for watching short ads at Jinglz. Download Jinglz: %s</string>
+
+    <string name="text_video_rule_eye_contact">Eye contact</string>
+    <string name="text_video_rule_volume">Turn it up!</string>
+    <string name="text_video_rule_view">View it all</string>
+    <string name="text_video_rule_view_description">You have to watch the entire video to be entered into the drawing.</string>
+    <string name="text_video_rule_eye_contact_description">Please ensure that you are facing your phone and that your face is well lit.</string>
+    <string name="text_video_rule_volume_description">The video will pause if the volume is turned down too low.</string>
+    <string name="text_enter_amount">Enter amount</string>
+    <string name="text_transferred_to_pay_pal">Funds will be transferred\nto PayPal account. 1 COIN = $%s</string>
+    <string name="text_available_coin">Available COIN</string>
+    <string name="error_min_redeem_coin_count">Minimum to redeem is 200 coin</string>
+    <string name="error_no_enough_coins">Not enough coins</string>
+    <string name="error_earned_coins_limit">Congrats. You have earned 60K COIN with Jinglz. Please, check your email to get the details</string>
+    <string name="error_pay_pal_link_another_account">You already have an account. Please check your email</string>
+    <string name="error_pay_pal_not_usa">Your verification has failed, please check your email</string>
+    <string name="text_redeemable_for">Redeemable for:\n$%s</string>
+    <string name="time_minutes">%2$02d:%3$02d</string>
+    <string name="time_hours">%1$02d:%2$02d:%3$02d</string>
+    <string name="text_can_you_hear_me">Can you hear me?</string>
+    <string name="you_volume_needs_to_be_enabled_to_watch_this_video">You volume needs to be enabled to watch this video.</string>
+    <string name="text_pay_pal">PayPal</string>
+    <string name="text_make_eye_contact">Let\'s make eye contact</string>
+    <string name="try_watching_again_facing_the_screen_with_your_face_being_well_lit">Try watching again facing the screen with your face being well lit.</string>
+    <string name="text_camera_permission_error">The application requires permission to the camera</string>
+    <string name="text_success">Success!</string>
+    <string name="text_contest_success_description">You have been entered into the %1$s %2$s time drawing</string>
+    <string name="text_contact_us">We\'d love to hear from you!</string>
+    <string name="text_comments_and_questions">Write your comments or question</string>
+    <string name="action_send">Send</string>
+    <string name="text_message_successfully_send">You message has been sent successfully</string>
+    <string name="text_message_will_reviewed">Dr. Jinglz will thoroughly review your comments or questions and respond shortly</string>
+    <string name="text_pending_placeholder">\?</string>
+    <string name="error_change_password">Oops! It seems the password you entered is wrong</string>
+    <string name="error_your_session_has_expired">Your session has expired</string>
+    <string name="error_outside_allowed_country">You have to be in US to continue using Jinglz</string>
+    <string name="format_today_history_time">%1$s %2$s time</string>
+    <string name="text_video_history_today_empty">You didn\'t watch\nany videos today.</string>
+    <string name="text_video_history_week_empty">You didn\'t watch\nany videos this week.</string>
+    <string name="text_video_history_month_empty">You didn\'t watch\nany videos this month.</string>
+    <string name="zero">0</string>
+    <string name="text_success_paypal_redeem_share">I just redeemed %d COIN via PayPal for watching short ads at Jinglz.</string>
+    <string name="text_redeem_approved">Redemption approved!</string>
+    <string name="text_payment_emailed">Your payment emailed to %s. If you don\`t collect within 30 days,
+        PayPal will return the funds, so please make sure you collect it.</string>
+    <string name="error_fill_phone">Please, fill the phone number information in your profile</string>
+    <string name="text_coin_you_earned">COIN you earned</string>
+
+    <string name="week_name_format">Week %1$d</string>
+    <string name="week_balance_format">%1$s\n%2$s coin</string>
+    <string name="month_balance_header_format">%1$s %2$s coins</string>
+    <string name="error_paypal_already_linked">This PayPal account is already used</string>
+
+    <string name="last_update_test_preferences">Last_Update_Check</string>
+
+    <string name="ok">OK</string>
+    <string name="yes">Update</string>
+    <string name="no">NO</string>
+
+    <string name="loading">Loading&#8230;</string>
+    <string name="update_test">Checking for updates&#8230;</string>
+
+    <string name="you_are_updated_title">The app is already updated</string>
+    <string name="you_are_not_updated_title">The app is not updated</string>
+    <string name="you_are_updated_message">Your app is already updated to the latest version available.\nPress OK to exit.</string>
+    <string name="you_are_not_updated_message">Press YES to update the app on Google Play, press NO to exit.</string>
+
+    <string name="requests">Requests</string>
+    <string name="GPSAlertDialogTitle">GPS : </string>
+    <string name="GPSAlertDialogMessage">Please turn on GPS</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialog_btn_cancel">Cancel</string>
+    <string name="permission_location">Please accept the permission to get location.</string>
+    <string name="dialog_cancel">No</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="title_gps">Please turn on your gps location to continue using Jinglz</string>
+    <string name="hello_world">Hello Pia</string>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/badge_time"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_time"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/very_small"
+    tools:ignore="MissingPrefix"
+    tools:showIn="@layout/item_feed_video_new">
+
+    <TextView
+        android:id="@+id/text_time_title"
+        fontPath="@string/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/badge_title_offset"
+        android:drawablePadding="@dimen/very_small"
+        android:drawableStart="@drawable/ic_timer"
+        android:text="@string/text_time_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/badge_title_text_size" />
+
+    <com.jinglz.app.ui.base.widget.CountDownTimerView
+        android:id="@+id/text_time"
+        fontPath="@string/bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/badge_title_offset"
+        android:gravity="end"
+        android:textColor="@color/white"
+        tools:text="23:00:00" />
+
+</LinearLayout>

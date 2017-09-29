@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/settings_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/text_position"
+        android:layout_width="@dimen/list_item_avatar_margin"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/view_spacing_normal"
+        android:paddingStart="@dimen/view_spacing_normal"
+        fontPath="@string/light"
+        tools:text="42st" />
+
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="@dimen/list_avatar_size"
+        android:layout_height="@dimen/list_avatar_size"
+        tools:src="@drawable/avatar_placeholder" />
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/SingleLineText"
+        fontPath="@string/bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_spacing_small"
+        android:layout_weight="1"
+        tools:text="Edvard Norton" />
+
+    <TextView
+        android:id="@+id/text_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/view_spacing_normal"
+        android:paddingStart="@dimen/view_spacing_normal"
+        fontPath="@string/light"
+        tools:text="50 COIN" />
+</LinearLayout>

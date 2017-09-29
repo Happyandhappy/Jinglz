@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/text_edit_profile"
+            style="@style/TexItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_item_height"
+            android:text="@string/text_edit_profile" />
+
+        <TextView
+            android:id="@+id/text_change_password"
+            style="@style/TexItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_item_height"
+            android:text="@string/text_change_password" />
+
+        <TextView
+            android:id="@+id/text_services"
+            style="@style/TexItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_item_height"
+            android:text="@string/text_services" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_stroke_width"
+            android:background="@color/divider_color" />
+
+
+        <TextView
+            android:id="@+id/text_log_out"
+            style="@style/TexItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_item_height"
+            android:text="@string/text_logout" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
